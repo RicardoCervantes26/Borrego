@@ -1,0 +1,5 @@
+Carlito (Carlito-Regular.woff, Carlito-Bold.woff)
+Copyright (c) 2010-2013 Lukasz Dziedzic (tyPoland) con nombre reservado "Carlito".
+Licencia: SIL Open Font License, Version 1.1 — https://openfontlicense.org
+Las fuentes se alojan en este proyecto (carpeta fuentes/) y se cargan con @font-face desde CSS/estilos.css;
+no se usa ningún servicio ni enlace externo.

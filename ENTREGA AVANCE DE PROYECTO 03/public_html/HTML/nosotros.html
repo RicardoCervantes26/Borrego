@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Historia, misión, visión, valores y equipo técnico de Acero y Altura, empresa de acabados de construcción y sistemas de elevación.">
+  <meta name="keywords" content="empresa de acabados, historia, mision, vision, valores, equipo tecnico, Arequipa">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Nosotros</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Nosotros</p>
+        <h1>Nosotros</h1>
+        <p>Quiénes somos, qué hacemos y por qué las constructoras confían en nosotros desde hace 15 años.</p>
+      </div>
+    </section>
+
+    <!-- HISTORIA, MISIÓN Y VISIÓN + PANEL LATERAL DE VALORES -->
+    <section class="seccion">
+      <div class="contenedor rejilla-contenido-lateral">
+
+        <div>
+          <h2 class="titulo-seccion">Nuestra historia</h2>
+          <p>Acero &amp; Altura nació en el año 2011 como un pequeño taller de acabados para
+             vivienda en el cercado de Arequipa. La demanda de obras de mediana altura nos llevó
+             a incorporar la línea de adhesivos industriales y, hacia 2016, el servicio
+             especializado de instalación y mantenimiento de ascensores.</p>
+
+          <blockquote>Hoy atendemos obra nueva, remodelación y mantenimiento programado con un
+             mismo equipo técnico y una sola garantía escrita.</blockquote>
+
+          <h3>Misión</h3>
+          <p>Entregar acabados, adhesivos y sistemas de elevación seguros, duraderos y a tiempo,
+             respaldando cada servicio con garantía escrita y con un equipo técnico
+             permanentemente capacitado.</p>
+
+          <h3>Visión</h3>
+          <p>Ser la empresa de referencia en acabados de construcción y sistemas de elevación
+             para edificaciones de mediana y gran altura en la región sur del Perú, reconocida
+             por la seguridad de sus instalaciones y por el cumplimiento riguroso de sus plazos.</p>
+
+          <h3>Línea de tiempo</h3>
+          <ul class="linea-tiempo">
+            <li><b>2011 &mdash; Fundación</b>
+                Taller de acabados para vivienda con tres operarios y un almacén alquilado.</li>
+            <li><b>2014 &mdash; Línea de adhesivos</b>
+                Incorporación de morteros y pegamentos de alta adherencia para porcelanato.</li>
+            <li><b>2016 &mdash; Elevación</b>
+                Primera instalación de ascensor en un edificio multifamiliar de ocho pisos.</li>
+            <li><b>2021 &mdash; Mantenimiento programado</b>
+                Contratos anuales de mantenimiento preventivo con administradores de edificios.</li>
+            <li><b>2026 &mdash; Presencia digital</b>
+                Puesta en marcha del sitio web corporativo y del registro de clientes.</li>
+          </ul>
+        </div>
+
+        <!-- BARRA LATERAL -->
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>Nuestros valores</h3>
+            <ul>
+              <li>Seguridad ante todo</li>
+              <li>Cumplimiento de plazos</li>
+              <li>Materiales certificados</li>
+              <li>Atención directa del especialista</li>
+              <li>Mejora continua del equipo técnico</li>
+            </ul>
+            <div class="grupo-botones">
+              <a href="Contacto.html" class="boton boton-claro boton-bloque">Conversemos</a>
+            </div>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Datos de la empresa</h3>
+            <ul>
+              <li><span class="dato-tecnico">RUC</span> 20XXXXXXXXX</li>
+              <li><span class="dato-tecnico">Actividad</span> Acabados, adhesivos y elevación</li>
+              <li><span class="dato-tecnico">Sede</span> Arequipa, Perú</li>
+              <li><span class="dato-tecnico">Personal</span> 24 colaboradores</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestro equipo</h2>
+        <p class="texto-guia">Tres áreas técnicas coordinadas por un mismo jefe de obra.</p>
+
+        <div class="galeria">
+          <figure>
+            <img src="imagenes/soldadura-380.jpg"
+                 srcset="imagenes/soldadura-320.jpg 320w, imagenes/soldadura-380.jpg 380w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 32vw"
+                 alt="Operario realizando trabajos de soldadura en el taller"
+                 width="380" height="253" loading="lazy">
+            <figcaption>Área de estructuras y elevación</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/taller-380.jpg"
+                 srcset="imagenes/taller-320.jpg 320w, imagenes/taller-380.jpg 380w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 32vw"
+                 alt="Personal técnico durante una jornada de capacitación"
+                 width="380" height="253" loading="lazy">
+            <figcaption>Capacitación permanente</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/planos-420.jpg"
+                 srcset="imagenes/planos-320.jpg 320w, imagenes/planos-420.jpg 420w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 32vw"
+                 alt="Jefe de obra revisando planos y metrados"
+                 width="420" height="236" loading="lazy">
+            <figcaption>Oficina técnica</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPROMISOS -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestros compromisos</h2>
+        <div class="rejilla-3">
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-garantia.png" alt="">
+            <h3>Garantía escrita</h3>
+            <p>Cada instalación y cada suministro se entrega con un documento de garantía
+               que detalla alcance, vigencia y condiciones de atención.</p>
+          </article>
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-ascensor.png" alt="">
+            <h3>Cumplimiento normativo</h3>
+            <p>El servicio de elevación se ejecuta conforme a la Norma Técnica EM.070
+               del Reglamento Nacional de Edificaciones.</p>
+          </article>
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-acabados.png" alt="">
+            <h3>Trazabilidad de materiales</h3>
+            <p>Informamos marca, lote y ficha técnica de los materiales empleados en obra,
+               a solicitud del cliente o de la supervisión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

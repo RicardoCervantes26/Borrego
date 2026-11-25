@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Libro de reclamaciones virtual de Acero y Altura, conforme al Código de Protección y Defensa del Consumidor, Ley N.° 29571.">
+  <meta name="keywords" content="libro de reclamaciones, reclamo, queja, Ley 29571, Indecopi, consumidor">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Libro de reclamaciones</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html" class="activo">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html" class="activo">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Libro de reclamaciones</p>
+        <h1>Libro de reclamaciones</h1>
+        <p>Canal formal de atención de reclamos y quejas, conforme al Código de Protección y Defensa del Consumidor (Ley N.° 29571).</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor rejilla-formulario">
+
+        <form class="formulario" action="#" method="post" name="formularioReclamos">
+
+          <fieldset>
+            <legend>1. Identificación del consumidor</legend>
+
+            <div class="campo">
+              <label for="rec-nombre">Nombre completo <span class="obligatorio">*</span></label>
+              <input type="text" id="rec-nombre" name="recNombre" maxlength="100"
+                     placeholder="Nombres y apellidos" required>
+            </div>
+
+            <div class="campo campo-doble">
+              <div>
+                <label for="rec-tipodoc">Tipo de documento <span class="obligatorio">*</span></label>
+                <select id="rec-tipodoc" name="recTipoDoc" required>
+                  <option value="dni">DNI</option>
+                  <option value="ce">Carné de extranjería</option>
+                  <option value="pasaporte">Pasaporte</option>
+                  <option value="ruc">RUC</option>
+                </select>
+              </div>
+              <div>
+                <label for="rec-numdoc">Número de documento <span class="obligatorio">*</span></label>
+                <input type="text" id="rec-numdoc" name="recNumDoc" pattern="[0-9A-Za-z]{8,12}"
+                       placeholder="Número" required>
+              </div>
+            </div>
+
+            <div class="campo campo-doble">
+              <div>
+                <label for="rec-correo">Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="rec-correo" name="recCorreo"
+                       placeholder="nombre@correo.com" required>
+              </div>
+              <div>
+                <label for="rec-telefono">Teléfono <span class="obligatorio">*</span></label>
+                <input type="tel" id="rec-telefono" name="recTelefono" pattern="[0-9]{6,12}"
+                       placeholder="9XXXXXXXX" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="rec-domicilio">Domicilio <span class="obligatorio">*</span></label>
+              <input type="text" id="rec-domicilio" name="recDomicilio"
+                     placeholder="Calle, número, distrito" required>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="rec-menor" name="recMenor">
+              <label for="rec-menor">El consumidor es menor de edad (se requiere datos del
+                 padre, madre o apoderado).</label>
+            </div>
+
+            <div class="campo">
+              <label for="rec-apoderado">Nombre del padre, madre o apoderado</label>
+              <input type="text" id="rec-apoderado" name="recApoderado"
+                     placeholder="Complete solo si corresponde">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Identificación del bien contratado</legend>
+
+            <div class="grupo-opciones">
+              <span>Tipo de bien <span class="obligatorio">*</span></span>
+              <div class="opcion">
+                <input type="radio" id="bien-producto" name="recBien" value="producto" checked>
+                <label for="bien-producto">Producto (materiales, adhesivos, selladores)</label>
+              </div>
+              <div class="opcion">
+                <input type="radio" id="bien-servicio" name="recBien" value="servicio">
+                <label for="bien-servicio">Servicio (instalación o mantenimiento)</label>
+              </div>
+            </div>
+
+            <div class="campo campo-doble">
+              <div>
+                <label for="rec-monto">Monto reclamado (S/)</label>
+                <input type="number" id="rec-monto" name="recMonto" min="0" step="0.10"
+                       placeholder="0.00">
+              </div>
+              <div>
+                <label for="rec-fecha">Fecha del hecho <span class="obligatorio">*</span></label>
+                <input type="date" id="rec-fecha" name="recFecha" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="rec-descripcion">Descripción del producto o servicio
+                 <span class="obligatorio">*</span></label>
+              <input type="text" id="rec-descripcion" name="recDescripcion"
+                     placeholder="Ej. Mantenimiento preventivo de ascensor, orden N.° 0000" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Detalle de la reclamación y pedido</legend>
+
+            <div class="grupo-opciones">
+              <span>Tipo de solicitud <span class="obligatorio">*</span></span>
+              <div class="opcion">
+                <input type="radio" id="tipo-reclamo" name="recTipo" value="reclamo" checked>
+                <label for="tipo-reclamo">Reclamo (disconformidad con el producto o servicio)</label>
+              </div>
+              <div class="opcion">
+                <input type="radio" id="tipo-queja" name="recTipo" value="queja">
+                <label for="tipo-queja">Queja (disconformidad con la atención recibida)</label>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="rec-detalle">Detalle <span class="obligatorio">*</span></label>
+              <textarea id="rec-detalle" name="recDetalle" rows="6"
+                        placeholder="Describa lo ocurrido con el mayor detalle posible." required></textarea>
+            </div>
+
+            <div class="campo">
+              <label for="rec-pedido">Pedido del consumidor <span class="obligatorio">*</span></label>
+              <textarea id="rec-pedido" name="recPedido" rows="4"
+                        placeholder="Indique qué solución solicita." required></textarea>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="rec-veracidad" name="recVeracidad" required>
+              <label for="rec-veracidad">Declaro que la información consignada es verdadera y
+                 autorizo su tratamiento para la atención del caso.
+                 <span class="obligatorio">*</span></label>
+            </div>
+          </fieldset>
+
+          <div class="acciones-formulario">
+            <button type="submit" class="boton boton-acento">Registrar reclamación</button>
+            <button type="reset" class="boton">Limpiar</button>
+          </div>
+
+          <p class="aviso-legal">La formulación del reclamo no impide acudir a otras vías de
+             solución de controversias ni constituye requisito previo para denunciar ante el
+             Indecopi. El proveedor debe dar respuesta en un plazo no mayor
+             a treinta (30) días calendario.</p>
+        </form>
+
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>Hoja de reclamación N.&deg;</h3>
+            <ul>
+              <li><span class="dato-tecnico">Código</span><br>LR-2026-000</li>
+              <li><span class="dato-tecnico">Razón social</span><br>Acero &amp; Altura S. A. C.</li>
+              <li><span class="dato-tecnico">RUC</span><br>20XXXXXXXXX</li>
+              <li><span class="dato-tecnico">Dirección</span><br>Av. Principal 540, Cercado &mdash; Arequipa</li>
+            </ul>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Diferencia entre reclamo y queja</h3>
+            <ul>
+              <li><strong>Reclamo:</strong> disconformidad con el producto o el servicio recibido.</li>
+              <li><strong>Queja:</strong> malestar respecto de la atención al cliente.</li>
+            </ul>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Plazo de respuesta</h3>
+            <p>Respondemos por el medio que usted indique en un máximo de 30 días calendario,
+               contados desde el registro de la hoja.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

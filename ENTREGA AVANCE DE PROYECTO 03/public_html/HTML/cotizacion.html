@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cotice materiales de construcción en línea: calcule el total con IGV, descuento por volumen y envío, y genere su boleta o factura de demostración.">
+  <meta name="keywords" content="cotizacion, boleta, factura, carrito, materiales de construccion, Arequipa">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Cotización en línea</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body data-pagina="cotizacion">
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html" class="activo">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html" class="activo">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Cotización y boleta</p>
+        <h1>Cotización en línea</h1>
+        <p>Arme su pedido, calcule el total con IGV, descuento y envío, y genere su boleta o factura de demostración.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor rejilla-contenido-lateral">
+
+        <div>
+          <h2 class="titulo-seccion">1. Elija los productos</h2>
+          <p class="texto-guia">Precios referenciales en soles, con IGV incluido. Indique la cantidad y
+             pulse <b>Agregar</b>, o use el botón <b>Agregar por código</b>.</p>
+
+          <div class="envoltorio-tabla">
+            <table class="tabla-datos">
+              <caption>Tabla 1. Catálogo disponible para cotizar</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Código</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Presentación</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpo-catalogo"></tbody>
+            </table>
+          </div>
+
+          <div class="acciones-formulario separado">
+            <button type="button" class="boton" id="boton-agregar-codigo">Agregar por código</button>
+            <a href="productos.html" class="boton">Ver catálogo con fotos</a>
+          </div>
+
+          <h2 class="titulo-seccion">2. Su cotización</h2>
+
+          <p class="mensaje-vacio" id="mensaje-vacio">Aún no agregó productos. Use la tabla de arriba para armar su pedido.</p>
+          <div class="envoltorio-tabla">
+            <table class="tabla-datos" id="tabla-carrito" hidden>
+              <caption>Tabla 2. Productos seleccionados</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Código</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">P. unitario</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Subtotal</th>
+                  <th scope="col">Quitar</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpo-carrito"></tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row" colspan="4">Subtotal (con IGV)</th>
+                  <td class="celda-precio" id="pie-subtotal">S/ 0.00</td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <form class="formulario" id="formulario-comprobante" action="#" method="post" novalidate>
+            <h2 class="titulo-seccion">3. Datos del comprobante</h2>
+
+            <fieldset>
+              <legend>Tipo de comprobante</legend>
+              <div class="grupo-opciones">
+                <div class="opcion">
+                  <input type="radio" id="tipo-boleta" name="tipoComprobante" value="boleta" checked>
+                  <label for="tipo-boleta">Boleta de venta (persona natural, con DNI)</label>
+                </div>
+                <div class="opcion">
+                  <input type="radio" id="tipo-factura" name="tipoComprobante" value="factura">
+                  <label for="tipo-factura">Factura (empresa, con RUC)</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos del cliente</legend>
+
+              <div class="campo">
+                <label for="nombre-cliente"><span id="texto-nombre">Nombres y apellidos</span> <span class="obligatorio">*</span></label>
+                <input type="text" id="nombre-cliente" name="nombre" maxlength="120" placeholder="Ej. María Quispe Huamán" autocomplete="name">
+              </div>
+
+              <div class="campo campo-doble">
+                <div>
+                  <label for="documento-cliente"><span id="texto-documento">DNI</span> <span class="obligatorio">*</span></label>
+                  <input type="text" id="documento-cliente" name="documento" inputmode="numeric" maxlength="8" placeholder="8 dígitos">
+                </div>
+                <div>
+                  <label for="telefono-cliente">Celular <span class="obligatorio">*</span></label>
+                  <input type="tel" id="telefono-cliente" name="telefono" inputmode="numeric" maxlength="9" placeholder="9XXXXXXXX" autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="correo-cliente">Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="correo-cliente" name="correo" placeholder="nombre@correo.com" autocomplete="email">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Entrega y pago</legend>
+              <div class="campo campo-doble">
+                <div>
+                  <label for="distrito">Entrega</label>
+                  <select id="distrito" name="distrito"></select>
+                  <small class="ayuda-campo">Envío gratis en compras desde S/ 500.</small>
+                </div>
+                <div>
+                  <label for="medio-pago">Medio de pago</label>
+                  <select id="medio-pago" name="medioPago"></select>
+                </div>
+              </div>
+
+              <div class="campo-check">
+                <input type="checkbox" id="acepta-terminos" name="aceptaTerminos">
+                <label for="acepta-terminos">Acepto los <a href="terminos.html" target="_blank" rel="noopener">términos y condiciones</a>
+                   y el tratamiento de mis datos personales. <span class="obligatorio">*</span></label>
+              </div>
+            </fieldset>
+
+            <div class="errores-formulario" id="errores-formulario" role="alert" hidden></div>
+
+            <div class="acciones-formulario">
+              <button type="submit" class="boton boton-acento">Generar comprobante</button>
+              <button type="button" class="boton" id="boton-ver-resumen">Ver resumen</button>
+              <button type="button" class="boton" id="boton-vaciar">Vaciar cotización</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="barra-lateral">
+          <div class="panel-lateral resumen-cotizacion">
+            <h3>Resumen del pedido</h3>
+            <dl class="resumen-lista">
+              <div><dt>Unidades</dt><dd id="res-unidades">0</dd></div>
+              <div><dt>Subtotal</dt><dd id="res-subtotal">S/ 0.00</dd></div>
+              <div><dt id="res-etiqueta-descuento">Descuento por volumen (0 %)</dt><dd id="res-descuento">− S/ 0.00</dd></div>
+              <div><dt>Envío</dt><dd id="res-envio">S/ 0.00</dd></div>
+              <div class="total"><dt>Total a pagar</dt><dd id="res-total">S/ 0.00</dd></div>
+              <div><dt>Op. gravada</dt><dd id="res-gravada">S/ 0.00</dd></div>
+              <div><dt>IGV (18 %)</dt><dd id="res-igv">S/ 0.00</dd></div>
+            </dl>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Condiciones</h3>
+            <ul>
+              <li>5 % de descuento desde 20 unidades</li>
+              <li>10 % de descuento desde 50 unidades</li>
+              <li>Envío gratis desde S/ 500</li>
+              <li>Precios con IGV incluido</li>
+            </ul>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>¿Necesita ayuda?</h3>
+            <ul>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="Contacto.html">Escribir al área comercial</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

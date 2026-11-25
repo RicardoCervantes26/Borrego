@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portafolio de obras de acabados, adhesivos y sistemas de elevación ejecutadas por Acero y Altura entre 2023 y 2026.">
+  <meta name="keywords" content="proyectos de construccion, obras ejecutadas, instalacion de ascensores, acabados, portafolio">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Proyectos</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Proyectos</p>
+        <h1>Proyectos ejecutados</h1>
+        <p>Una muestra de obras de acabados, adhesivos y elevación entregadas entre 2023 y 2026.</p>
+      </div>
+    </section>
+
+    <!-- FICHAS DE PROYECTO -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Portafolio de obras</h2>
+        <p class="texto-guia">Cada ficha indica la línea de trabajo, la ubicación y el plazo real
+           de ejecución. Pase el puntero sobre una ficha para ver la etiqueta de la línea.</p>
+
+        <div class="rejilla-3">
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/edificio-700.jpg"
+                   srcset="imagenes/edificio-320.jpg 320w, imagenes/edificio-700.jpg 700w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Edificio multifamiliar de ocho pisos con ascensor instalado"
+                   width="700" height="467" loading="lazy">
+              <figcaption class="etiqueta-linea">Elevación</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Edificio Los Álamos</h3>
+              <p>Instalación de ascensor de ocho paradas, con capacidad para 630 kg
+                 y maniobra colectiva descendente.</p>
+              <p class="ficha-datos">Cercado &mdash; 2026 &mdash; 11 semanas</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/vivienda-420.jpg"
+                   srcset="imagenes/vivienda-320.jpg 320w, imagenes/vivienda-420.jpg 420w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Vivienda unifamiliar con acabados exteriores terminados"
+                   width="420" height="280" loading="lazy">
+              <figcaption class="etiqueta-linea">Acabados</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Residencia La Campiña</h3>
+              <p>Acabados interiores y exteriores: tarrajeo fino, porcelanato de formato
+                 grande y pintura lavable en 420 m&sup2;.</p>
+              <p class="ficha-datos">Sachaca &mdash; 2025 &mdash; 7 semanas</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/soldadura-380.jpg"
+                   srcset="imagenes/soldadura-320.jpg 320w, imagenes/soldadura-380.jpg 380w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Trabajos de soldadura para estructura de montacargas"
+                   width="380" height="253" loading="lazy">
+              <figcaption class="etiqueta-linea">Elevación</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Almacén Industrial Sur</h3>
+              <p>Montaje de montacargas de 1 500 kg y estructura metálica del ducto,
+                 con pruebas de carga certificadas.</p>
+              <p class="ficha-datos">Parque industrial &mdash; 2025 &mdash; 9 semanas</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/planos-420.jpg"
+                   srcset="imagenes/planos-320.jpg 320w, imagenes/planos-420.jpg 420w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Revisión de planos y metrados del proyecto"
+                   width="420" height="236" loading="lazy">
+              <figcaption class="etiqueta-linea">Acabados</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Centro Médico San Lucas</h3>
+              <p>Nivelación de pisos con mortero autonivelante y sellado sanitario
+                 de juntas en áreas de atención.</p>
+              <p class="ficha-datos">Yanahuara &mdash; 2024 &mdash; 5 semanas</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/taller-380.jpg"
+                   srcset="imagenes/taller-320.jpg 320w, imagenes/taller-380.jpg 380w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Capacitación del personal de mantenimiento de un edificio"
+                   width="380" height="253" loading="lazy">
+              <figcaption class="etiqueta-linea">Mantenimiento</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Condominio El Mirador</h3>
+              <p>Contrato anual de mantenimiento preventivo para tres equipos,
+                 con capacitación al personal de conserjería.</p>
+              <p class="ficha-datos">Cayma &mdash; 2024 &mdash; Contrato vigente</p>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <figure>
+              <img src="imagenes/oficina-380.jpg"
+                   srcset="imagenes/oficina-320.jpg 320w, imagenes/oficina-380.jpg 380w"
+                   sizes="(max-width: 760px) 100vw, 33vw"
+                   alt="Oficina técnica durante el seguimiento de una obra"
+                   width="380" height="570" loading="lazy">
+              <figcaption class="etiqueta-linea">Adhesivos</figcaption>
+            </figure>
+            <div class="cuerpo-proyecto">
+              <h3>Galería Comercial Centro</h3>
+              <p>Suministro de adhesivo epóxico y cinta industrial para la remodelación
+                 de 18 locales comerciales.</p>
+              <p class="ficha-datos">Cercado &mdash; 2023 &mdash; 4 semanas</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUMEN EN TABLA -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Resumen de obras por año</h2>
+        <div class="envoltorio-tabla">
+          <table class="tabla-datos">
+            <caption>Tabla 4. Obras ejecutadas por línea de trabajo</caption>
+            <colgroup>
+              <col class="col-codigo">
+              <col class="col-unidad">
+              <col class="col-unidad">
+              <col class="col-unidad">
+              <col class="col-unidad">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Año</th>
+                <th scope="col">Acabados</th>
+                <th scope="col">Adhesivos</th>
+                <th scope="col">Elevación</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">2023</th><td>34</td><td>21</td><td>12</td><td>67</td>
+              </tr>
+              <tr>
+                <th scope="row">2024</th><td>41</td><td>26</td><td>18</td><td>85</td>
+              </tr>
+              <tr>
+                <th scope="row">2025</th><td>46</td><td>30</td><td>24</td><td>100</td>
+              </tr>
+              <tr>
+                <th scope="row">2026</th><td>22</td><td>15</td><td>14</td><td>51</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Total</th><td>143</td><td>92</td><td>68</td><td>303</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p class="nota-tabla">El año 2026 considera obras cerradas hasta el mes de setiembre.</p>
+      </div>
+    </section>
+
+    <section class="franja-cta">
+      <div class="contenedor">
+        <div class="caja-cta">
+          <div>
+            <h2>¿Su obra se parece a alguna de estas?</h2>
+            <p>Envíenos los planos o el metrado y preparamos una propuesta con el mismo alcance.</p>
+          </div>
+          <a href="Contacto.html" class="boton boton-acento">Solicitar propuesta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

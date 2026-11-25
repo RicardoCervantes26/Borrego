@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Instalación, modernización, mantenimiento preventivo y correctivo de ascensores y elevadores en Arequipa, conforme a la Norma Técnica EM.070.">
+  <meta name="keywords" content="mantenimiento de ascensores, instalacion de ascensores, modernizacion, EM.070, Arequipa">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Servicios de elevación</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html" class="activo">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Servicios</p>
+        <h1>Servicios de elevación</h1>
+        <p>Instalación, modernización y mantenimiento de ascensores y elevadores conforme a la Norma Técnica EM.070.</p>
+      </div>
+    </section>
+
+    <!-- PROCESO DE TRABAJO -->
+    <section class="seccion">
+      <div class="contenedor">
+        <img class="engranaje" src="imagenes/icono-engranaje.png" alt="">
+        <h2 class="titulo-seccion">Cómo trabajamos</h2>
+        <p class="texto-guia">Cuatro etapas, un responsable técnico asignado y un informe
+           firmado al cierre de cada visita.</p>
+
+        <div class="pasos">
+          <article class="paso">
+            <h3>Visita técnica</h3>
+            <p>Evaluación del ducto, la maquinaria y el estado de la instalación existente.</p>
+          </article>
+          <article class="paso">
+            <h3>Propuesta</h3>
+            <p>Alcance, repuestos, cronograma y precio cerrado en un plazo máximo de 48 horas.</p>
+          </article>
+          <article class="paso">
+            <h3>Ejecución</h3>
+            <p>Trabajo con personal propio, señalización del área y protocolo de seguridad.</p>
+          </article>
+          <article class="paso">
+            <h3>Entrega y garantía</h3>
+            <p>Pruebas de funcionamiento, acta de conformidad y garantía escrita del servicio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLA DE PLANES -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Servicios y planes de mantenimiento</h2>
+
+        <div class="envoltorio-tabla">
+          <table class="tabla-datos">
+            <caption>Tabla 3. Servicios de elevación, alcance y precio de partida</caption>
+            <colgroup>
+              <col class="col-detalle">
+              <col class="col-detalle">
+              <col class="col-unidad">
+              <col class="col-precio">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Servicio</th>
+                <th scope="col">Alcance</th>
+                <th scope="col">Frecuencia</th>
+                <th scope="col">Desde (S/)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Instalación de ascensor</th>
+                <td>Edificios de 4 a 20 pisos, suministro e instalación completa</td>
+                <td>Proyecto único</td>
+                <td class="celda-precio">A cotizar</td>
+              </tr>
+              <tr>
+                <th scope="row">Modernización</th>
+                <td>Cambio de maniobra, cabina, puertas y sistema de tracción</td>
+                <td>Proyecto único</td>
+                <td class="celda-precio">A cotizar</td>
+              </tr>
+              <tr>
+                <th scope="row">Mantenimiento preventivo</th>
+                <td>Revisión mecánica y eléctrica, lubricación y ajuste de seguridades</td>
+                <td>Mensual</td>
+                <td class="celda-precio">350.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mantenimiento correctivo</th>
+                <td>Atención de fallas, reemplazo de componentes y pruebas</td>
+                <td>Por evento</td>
+                <td class="celda-precio">280.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Atención de emergencia</th>
+                <td>Liberación de pasajeros y puesta en servicio</td>
+                <td>24 horas</td>
+                <td class="celda-precio">180.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Plan anual preventivo (12 visitas), precio por equipo</td>
+                <td class="celda-precio">3 780.00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <p class="nota-tabla">El servicio de mantenimiento es prestado por personal cuya actividad
+           declarada corresponde al rubro, según exige la Norma Técnica EM.070 del Reglamento
+           Nacional de Edificaciones.</p>
+      </div>
+    </section>
+
+    <!-- COBERTURA Y COMPROMISOS -->
+    <section class="seccion">
+      <div class="contenedor rejilla-contenido-lateral">
+        <div>
+          <h2 class="titulo-seccion">Alcance de cada visita preventiva</h2>
+          <ul class="lista-chequeo">
+            <li>Revisión de cables de tracción, poleas y contrapeso.</li>
+            <li>Verificación de finales de carrera y seguridades de puerta.</li>
+            <li>Prueba de frenado y de nivelación en cada parada.</li>
+            <li>Limpieza de foso, lubricación de guías y ajuste de tableros.</li>
+            <li>Medición de consumo eléctrico del motor.</li>
+            <li>Informe firmado con observaciones y repuestos sugeridos.</li>
+          </ul>
+
+          <div class="grupo-botones">
+            <a href="Contacto.html" class="boton boton-acento">Solicitar visita técnica</a>
+            <a href="preguntas.html" class="boton">Preguntas frecuentes</a>
+          </div>
+        </div>
+
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>Atención de emergencias</h3>
+            <ul>
+              <li><span class="punto-estado"></span> Central disponible 24 horas</li>
+              <li>Teléfono: (054) 123-456</li>
+              <li>WhatsApp: 967-654-321</li>
+              <li>Tiempo de llegada promedio: 45 min</li>
+            </ul>
+          </div>
+          <div class="caja-lateral">
+            <h3>Documentación que entregamos</h3>
+            <ul>
+              <li>Acta de conformidad por visita</li>
+              <li>Historial de mantenimiento del equipo</li>
+              <li>Garantía escrita del servicio</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Preguntas frecuentes sobre cotizaciones, garantías, despacho de materiales y mantenimiento de ascensores.">
+  <meta name="keywords" content="preguntas frecuentes, garantia, cotizacion, despacho, mantenimiento de ascensores">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Preguntas frecuentes</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html" class="activo">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html" class="activo">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Preguntas frecuentes</p>
+        <h1>Preguntas frecuentes</h1>
+        <p>Respuestas a las consultas más habituales sobre materiales, plazos, garantías y mantenimiento de ascensores.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor rejilla-contenido-lateral">
+
+        <div>
+          <h2 class="titulo-seccion">Consultas habituales</h2>
+          <p class="texto-guia">El desplegable funciona con los elementos nativos
+             &lt;details&gt; y &lt;summary&gt;, animados desde la hoja de estilos.</p>
+
+          <div class="acordeon">
+            <details open>
+              <summary>¿Atienden obras fuera de Arequipa?</summary>
+              <div class="respuesta">
+                <p>Sí. Trabajamos en toda la región sur. Para obras fuera de la ciudad se
+                   considera un costo de movilidad y viáticos que se detalla en la cotización.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Cuánto demora una cotización?</summary>
+              <div class="respuesta">
+                <p>Menos de 48 horas hábiles desde que recibimos el metrado o las características
+                   del edificio. Si se requiere visita técnica, la programamos dentro de los
+                   siguientes dos días.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Qué garantía tienen los trabajos?</summary>
+              <div class="respuesta">
+                <p>Los acabados tienen doce meses de garantía por defectos de ejecución y la
+                   instalación de ascensores, veinticuatro meses. Toda garantía se entrega por
+                   escrito junto con el acta de conformidad.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Cada cuánto debe hacerse el mantenimiento de un ascensor?</summary>
+              <div class="respuesta">
+                <p>La práctica recomendada es una visita preventiva mensual. Nuestros contratos
+                   anuales consideran doce visitas programadas y atención de emergencias.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Venden materiales a clientes particulares?</summary>
+              <div class="respuesta">
+                <p>Sí, atendemos venta por unidad en el almacén. Los precios preferenciales por
+                   volumen están disponibles para clientes registrados.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Realizan despacho a obra?</summary>
+              <div class="respuesta">
+                <p>Sí, dentro de la ciudad de Arequipa. El despacho es gratuito a partir de
+                   compras de veinte bolsas o su equivalente.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Qué formas de pago aceptan?</summary>
+              <div class="respuesta">
+                <p>Efectivo, transferencia bancaria y tarjeta. Los clientes registrados con
+                   historial pueden solicitar línea de crédito a treinta días.</p>
+              </div>
+            </details>
+
+            <details>
+              <summary>¿Cómo presento un reclamo?</summary>
+              <div class="respuesta">
+                <p>Mediante el <a href="reclamos.html">libro de reclamaciones</a> del sitio.
+                   Respondemos en un plazo máximo de treinta días calendario.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>¿No encontró su respuesta?</h3>
+            <p>Escríbanos y un especialista atenderá su consulta en el mismo día hábil.</p>
+            <div class="grupo-botones">
+              <a href="Contacto.html" class="boton boton-claro boton-bloque">Hacer una consulta</a>
+            </div>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Enlaces útiles</h3>
+            <ul>
+              <li><a href="servicios.html">Planes de mantenimiento</a></li>
+              <li><a href="productos.html">Precios referenciales</a></li>
+              <li><a href="ubicacion.html">Cómo llegar al almacén</a></li>
+              <li>Normativa de edificaciones</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

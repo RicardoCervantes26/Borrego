@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Catálogo de acabados de construcción, adhesivos, selladores y cintas industriales con presentación, rendimiento y precio referencial.">
+  <meta name="keywords" content="catalogo de acabados, pegamento porcelanato, sellador silicona, cinta industrial, precios">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Productos</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body data-pagina="productos">
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html" class="activo">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Productos</p>
+        <h1>Productos</h1>
+        <p>Catálogo de acabados, adhesivos, selladores y cintas industriales con presentación y precio referencial.</p>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO: CARTAS SELECCIONABLES (casillas de opción + :checked, sin JavaScript) -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Catálogo de materiales y acabados</h2>
+        <p class="texto-guia">Seleccione una carta para ver el detalle del producto. Precios
+           referenciales en soles, con IGV incluido, vigentes para compras en nuestro almacén de Arequipa.</p>
+
+        <fieldset class="selector-productos">
+          <legend class="salto-contenido">Seleccione un producto del catálogo</legend>
+
+          <input type="radio" name="producto" id="prod-ac101" class="control-producto" checked>
+          <input type="radio" name="producto" id="prod-ac102" class="control-producto">
+          <input type="radio" name="producto" id="prod-ac103" class="control-producto">
+          <input type="radio" name="producto" id="prod-ad201" class="control-producto">
+          <input type="radio" name="producto" id="prod-ad202" class="control-producto">
+          <input type="radio" name="producto" id="prod-se301" class="control-producto">
+          <input type="radio" name="producto" id="prod-se302" class="control-producto">
+          <input type="radio" name="producto" id="prod-ci401" class="control-producto">
+
+          <div class="cartas-productos">
+            <label class="carta-producto" for="prod-ac101">
+              <img class="carta-imagen img-pasta-muro" src="imagenes/producto-pasta-muro.jpg" alt="Balde blanco de pasta para muro interior Acero &amp; Altura, 20 kg">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Acabados</span>
+                <span class="carta-nombre">Pasta para muro interior</span>
+                <span class="carta-precio">S/ 38.00</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-ac102">
+              <img class="carta-imagen img-pintura-latex" src="imagenes/producto-pintura-latex.jpg" alt="Galón de pintura látex lavable Acero &amp; Altura sobre una mesa con brocha y cartilla de colores">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Acabados</span>
+                <span class="carta-nombre">Pintura látex lavable</span>
+                <span class="carta-precio">S/ 145.00</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-ac103">
+              <img class="carta-imagen img-mortero-nivelante" src="imagenes/producto-mortero-nivelante.jpg" alt="Bolsa negra y naranja de mortero de nivelación autonivelante Acero &amp; Altura, 25 kg">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Acabados</span>
+                <span class="carta-nombre">Mortero de nivelación autonivelante</span>
+                <span class="carta-precio">S/ 52.00</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-ad201">
+              <img class="carta-imagen img-pegamento-porcelanato" src="imagenes/producto-pegamento-porcelanato.jpg" alt="Bolsa negra y naranja de pegamento para porcelanato Acero &amp; Altura, 25 kg">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Adhesivos</span>
+                <span class="carta-nombre">Pegamento para porcelanato</span>
+                <span class="carta-precio">S/ 42.50</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-ad202">
+              <img class="carta-imagen img-epox-adhesivo" src="imagenes/producto-epox-adhesivo.jpg" alt="Balde de Epox Adhesivo 32 de Acero &amp; Altura con herramientas de albañilería">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Adhesivos</span>
+                <span class="carta-nombre">Epox Adhesivo 32</span>
+                <span class="carta-precio">S/ 68.00</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-se301">
+              <img class="carta-imagen img-silicona-neutra" src="imagenes/producto-silicona-neutra.jpg" alt="Cartucho blanco de silicona neutra Unipega de Acero &amp; Altura, 280 ml">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Selladores y cintas</span>
+                <span class="carta-nombre">Silicona neutra Unipega</span>
+                <span class="carta-precio">S/ 17.90</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-se302">
+              <img class="carta-imagen img-sellador-universal" src="imagenes/producto-sellador-universal.jpg" alt="Cartucho naranja de sellador universal Acero &amp; Altura, 300 ml">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Selladores y cintas</span>
+                <span class="carta-nombre">Sellador universal</span>
+                <span class="carta-precio">S/ 34.00</span>
+              </span>
+            </label>
+            <label class="carta-producto" for="prod-ci401">
+              <img class="carta-imagen img-cinta-aluminio" src="imagenes/producto-cinta-aluminio.jpg" alt="Rollo de cinta de aluminio Acero &amp; Altura de 50 mm por 50 metros">
+              <span class="carta-cuerpo">
+                <span class="carta-linea">Selladores y cintas</span>
+                <span class="carta-nombre">Cinta de aluminio</span>
+                <span class="carta-precio">S/ 24.00</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="paneles-detalle" aria-live="polite">
+            <article class="detalle-producto" id="det-ac101">
+              <img class="detalle-imagen img-pasta-muro" src="imagenes/producto-pasta-muro.jpg" alt="Balde blanco de pasta para muro interior Acero &amp; Altura, 20 kg">
+              <div class="detalle-texto">
+                <span class="carta-linea">Acabados &middot; AC-101</span>
+                <h3>Pasta para muro interior</h3>
+                <p>Pasta de alto poder de relleno para nivelar y alisar muros interiores antes de la pintura.</p>
+                <ul class="detalle-lista">
+                  <li>Uso interior</li>
+                  <li>Alto rendimiento</li>
+                  <li>Gran poder de relleno</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Balde de 20 kg</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 38.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="AC-101">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-ac102">
+              <img class="detalle-imagen img-pintura-latex" src="imagenes/producto-pintura-latex.jpg" alt="Galón de pintura látex lavable Acero &amp; Altura sobre una mesa con brocha y cartilla de colores">
+              <div class="detalle-texto">
+                <span class="carta-linea">Acabados &middot; AC-102</span>
+                <h3>Pintura látex lavable</h3>
+                <p>Pintura látex lavable de ultra resistencia para paredes interiores y exteriores protegidos.</p>
+                <ul class="detalle-lista">
+                  <li>Uso interior y exterior</li>
+                  <li>Ultra resistencia</li>
+                  <li>Acabado lavable</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Galón (3.78 L)</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 145.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="AC-102">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-ac103">
+              <img class="detalle-imagen img-mortero-nivelante" src="imagenes/producto-mortero-nivelante.jpg" alt="Bolsa negra y naranja de mortero de nivelación autonivelante Acero &amp; Altura, 25 kg">
+              <div class="detalle-texto">
+                <span class="carta-linea">Acabados &middot; AC-103</span>
+                <h3>Mortero de nivelación autonivelante</h3>
+                <p>Mortero autonivelante para corregir desniveles del piso antes de colocar porcelanato o vinílico.</p>
+                <ul class="detalle-lista">
+                  <li>Alta fluidez</li>
+                  <li>Sin retracción</li>
+                  <li>Uso interior</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Bolsa de 25 kg</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 52.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="AC-103">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-ad201">
+              <img class="detalle-imagen img-pegamento-porcelanato" src="imagenes/producto-pegamento-porcelanato.jpg" alt="Bolsa negra y naranja de pegamento para porcelanato Acero &amp; Altura, 25 kg">
+              <div class="detalle-texto">
+                <span class="carta-linea">Adhesivos &middot; AD-201</span>
+                <h3>Pegamento para porcelanato</h3>
+                <p>Pegamento de alta adherencia para porcelanato, apto para interiores y exteriores.</p>
+                <ul class="detalle-lista">
+                  <li>Alta resistencia</li>
+                  <li>Gran adherencia</li>
+                  <li>Uso interior y exterior</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Bolsa de 25 kg</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 42.50</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="AD-201">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-ad202">
+              <img class="detalle-imagen img-epox-adhesivo" src="imagenes/producto-epox-adhesivo.jpg" alt="Balde de Epox Adhesivo 32 de Acero &amp; Altura con herramientas de albañilería">
+              <div class="detalle-texto">
+                <span class="carta-linea">Adhesivos &middot; AD-202</span>
+                <h3>Epox Adhesivo 32</h3>
+                <p>Puente de adherencia epóxico para unir concreto antiguo con concreto nuevo.</p>
+                <ul class="detalle-lista">
+                  <li>Dos componentes: A (base) y B (catalizador)</li>
+                  <li>Parte A: 4.11 kg &middot; Parte B: 0.89 kg</li>
+                  <li>Uso profesional en obra</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Kit A + B de 5 kg</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 68.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="AD-202">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-se301">
+              <img class="detalle-imagen img-silicona-neutra" src="imagenes/producto-silicona-neutra.jpg" alt="Cartucho blanco de silicona neutra Unipega de Acero &amp; Altura, 280 ml">
+              <div class="detalle-texto">
+                <span class="carta-linea">Selladores y cintas &middot; SE-301</span>
+                <h3>Silicona neutra Unipega</h3>
+                <p>Silicona 100 % neutra para sellar juntas en interiores y exteriores.</p>
+                <ul class="detalle-lista">
+                  <li>100 % silicona neutra</li>
+                  <li>Uso interior y exterior</li>
+                  <li>Cartucho de 280 ml</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Cartucho de 280 ml</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 17.90</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="SE-301">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-se302">
+              <img class="detalle-imagen img-sellador-universal" src="imagenes/producto-sellador-universal.jpg" alt="Cartucho naranja de sellador universal Acero &amp; Altura, 300 ml">
+              <div class="detalle-texto">
+                <span class="carta-linea">Selladores y cintas &middot; SE-302</span>
+                <h3>Sellador universal</h3>
+                <p>Sellador flexible y duradero para el sellado de juntas, en interior y exterior.</p>
+                <ul class="detalle-lista">
+                  <li>Uso interior y exterior</li>
+                  <li>Sellado de juntas</li>
+                  <li>Flexible y duradero</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Cartucho de 300 ml</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 34.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="SE-302">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+            <article class="detalle-producto" id="det-ci401">
+              <img class="detalle-imagen img-cinta-aluminio" src="imagenes/producto-cinta-aluminio.jpg" alt="Rollo de cinta de aluminio Acero &amp; Altura de 50 mm por 50 metros">
+              <div class="detalle-texto">
+                <span class="carta-linea">Selladores y cintas &middot; CI-401</span>
+                <h3>Cinta de aluminio</h3>
+                <p>Cinta de aluminio con adhesivo de alta resistencia para uso industrial y profesional.</p>
+                <ul class="detalle-lista">
+                  <li>50 mm &times; 50 m (1.97 in &times; 50 m)</li>
+                  <li>Adhesivo de alta resistencia</li>
+                  <li>Uso industrial y profesional</li>
+                </ul>
+                <dl class="detalle-datos">
+                  <div><dt>Presentación</dt><dd>Rollo de 50 mm &times; 50 m</dd></div>
+                  <div><dt>Precio referencial</dt><dd class="celda-precio">S/ 24.00</dd></div>
+                </dl>
+                <div class="grupo-botones">
+                  <button type="button" class="boton boton-acento" data-agregar="CI-401">Agregar a la cotización</button>
+                  <a href="cotizacion.html" class="boton">Ver mi cotización</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </fieldset>
+
+        <p class="nota-tabla">Los precios son referenciales y pueden variar según volumen de
+           compra y disponibilidad de stock. Solicite una cotización formal para obra.</p>
+      </div>
+    </section>
+
+    <!-- TABLA: RENDIMIENTO TÉCNICO + BARRA LATERAL -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor rejilla-contenido-lateral">
+
+        <div>
+          <h2 class="titulo-seccion">Rendimiento y recomendaciones de uso</h2>
+
+          <div class="envoltorio-tabla">
+            <table class="tabla-datos">
+              <caption>Tabla 1. Rendimiento aproximado por producto</caption>
+              <colgroup>
+                <col class="col-codigo">
+                <col class="col-detalle">
+                <col class="col-unidad">
+                <col class="col-unidad">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Código</th>
+                  <th scope="col">Aplicación recomendada</th>
+                  <th scope="col">Rendimiento</th>
+                  <th scope="col">Secado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">AC-101</th>
+                  <td>Muros interiores de yeso o concreto</td>
+                  <td>10 m&sup2; por balde</td>
+                  <td>4 horas</td>
+                </tr>
+                <tr>
+                  <th scope="row">AC-102</th>
+                  <td>Interiores y exteriores protegidos</td>
+                  <td>40 m&sup2; por galón</td>
+                  <td>2 horas</td>
+                </tr>
+                <tr>
+                  <th scope="row">AD-201</th>
+                  <td>Porcelanato de formato grande</td>
+                  <td>5 m&sup2; por bolsa</td>
+                  <td>24 horas</td>
+                </tr>
+                <tr>
+                  <th scope="row">SE-301</th>
+                  <td>Juntas sanitarias y carpintería</td>
+                  <td>12 m lineales</td>
+                  <td>30 minutos</td>
+                </tr>
+                <tr>
+                  <th scope="row">CI-401</th>
+                  <td>Embalaje técnico y señalización</td>
+                  <td>50 m por rollo</td>
+                  <td>Inmediato</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row" colspan="4">Valores obtenidos en condiciones de laboratorio
+                      a 20 &deg;C y 50 % de humedad relativa.</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <aside class="barra-lateral">
+          <div class="caja-lateral">
+            <h3>Descargas y fichas</h3>
+            <ul>
+              <li><a href="productos.html">Ficha técnica de adhesivos</a></li>
+              <li><a href="productos.html">Ficha técnica de selladores</a></li>
+              <li><a href="servicios.html">Planes de mantenimiento</a></li>
+            </ul>
+          </div>
+
+          <div class="panel-lateral">
+            <h3>¿Compra por volumen?</h3>
+            <ul>
+              <li>Descuentos desde 20 bolsas</li>
+              <li>Despacho a obra en Arequipa</li>
+              <li>Crédito para clientes registrados</li>
+            </ul>
+            <div class="grupo-botones">
+              <a href="Contacto.html" class="boton boton-claro boton-bloque">Pedir cotización</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- FICHAS VISUALES DE PRODUCTO -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Fichas destacadas del mes</h2>
+        <div class="rejilla-3">
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-adhesivos.png" alt="">
+            <h3>AD-201 &mdash; Porcelanato</h3>
+            <p>Pegamento de alta adherencia para piezas de hasta 120 &times; 60 cm,
+               apto para exteriores.</p>
+            <p class="dato-tecnico">Bolsa 25 kg &mdash; S/ 42.50</p>
+            <a class="enlace-tarjeta" href="Contacto.html">Cotizar</a>
+          </article>
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-selladores.png" alt="">
+            <h3>SE-302 &mdash; Juntas</h3>
+            <p>Sellador universal flexible y duradero para el sellado de juntas,
+               en interiores y exteriores.</p>
+            <p class="dato-tecnico">Cartucho 300 ml &mdash; S/ 34.00</p>
+            <a class="enlace-tarjeta" href="Contacto.html">Cotizar</a>
+          </article>
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-acabados.png" alt="">
+            <h3>AC-103 &mdash; Nivelación</h3>
+            <p>Mortero autonivelante para pisos con desnivel de hasta 10 mm,
+               previo a porcelanato o vinílico.</p>
+            <p class="dato-tecnico">Bolsa 25 kg &mdash; S/ 52.00</p>
+            <a class="enlace-tarjeta" href="Contacto.html">Cotizar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

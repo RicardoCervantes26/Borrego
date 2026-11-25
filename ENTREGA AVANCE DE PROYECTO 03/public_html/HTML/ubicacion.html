@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Dirección, plano de ubicación y horarios de atención del taller, almacén y sala de exhibición de Acero y Altura en Arequipa.">
+  <meta name="keywords" content="ubicacion, horario de atencion, direccion, almacen, sala de exhibicion, Arequipa">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Ubicación y horarios</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html" class="activo">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html" class="activo">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Ubicación</p>
+        <h1>Ubicación y horarios</h1>
+        <p>Taller, almacén y sala de exhibición de acabados y adhesivos en el cercado de Arequipa.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Plano de ubicación</h2>
+        <p class="texto-guia">El plano es una imagen elaborada por el equipo y se
+           incorpora mediante un marco en línea que apunta a una página del propio proyecto.</p>
+
+        <div class="marco-iframe">
+          <iframe src="mapa-sede.html" title="Plano esquemático de ubicación de la sede"
+                  loading="lazy"></iframe>
+        </div>
+        <p class="pie-recurso">Fuente: elaboración propia &mdash; archivo imagenes/plano-sede.png.</p>
+      </div>
+    </section>
+
+    <section class="seccion fondo-alterno">
+      <div class="contenedor rejilla-contenido-lateral">
+
+        <div>
+          <h2 class="titulo-seccion">Horario de atención</h2>
+          <div class="envoltorio-tabla">
+            <table class="tabla-datos">
+              <caption>Tabla 5. Horario de atención por área</caption>
+              <colgroup>
+                <col class="col-detalle">
+                <col class="col-unidad">
+                <col class="col-unidad">
+                <col class="col-unidad">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Área</th>
+                  <th scope="col">Lunes a viernes</th>
+                  <th scope="col">Sábado</th>
+                  <th scope="col">Domingo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Almacén y ventas</th>
+                  <td>8:00 a. m. &ndash; 6:00 p. m.</td>
+                  <td>8:00 a. m. &ndash; 1:00 p. m.</td>
+                  <td>Cerrado</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sala de exhibición</th>
+                  <td>9:00 a. m. &ndash; 6:00 p. m.</td>
+                  <td>9:00 a. m. &ndash; 1:00 p. m.</td>
+                  <td>Cerrado</td>
+                </tr>
+                <tr>
+                  <th scope="row">Oficina técnica</th>
+                  <td>8:00 a. m. &ndash; 5:00 p. m.</td>
+                  <td>Con cita previa</td>
+                  <td>Cerrado</td>
+                </tr>
+                <tr>
+                  <th scope="row">Emergencias de elevación</th>
+                  <td>24 horas</td>
+                  <td>24 horas</td>
+                  <td>24 horas</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Los feriados nacionales se atiende solo el servicio de emergencias.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <h3>Cómo llegar</h3>
+          <ul class="lista-chequeo">
+            <li>A dos cuadras de la avenida principal, frente al parque zonal.</li>
+            <li>Estacionamiento para clientes en la calle lateral.</li>
+            <li>Acceso de camiones por la calle El Pórtico.</li>
+            <li>Rutas de transporte público con paradero a 100 metros.</li>
+          </ul>
+        </div>
+
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>Datos de la sede</h3>
+            <ul>
+              <li><span class="dato-tecnico">Dirección</span><br>Av. Principal 540, Cercado</li>
+              <li><span class="dato-tecnico">Ciudad</span><br>Arequipa, Perú</li>
+              <li><span class="dato-tecnico">Teléfono</span><br>(054) 123-456</li>
+              <li><span class="dato-tecnico">Correo</span><br>ventas@aceroyaltura.pe</li>
+            </ul>
+            <div class="grupo-botones">
+              <a href="Contacto.html" class="boton boton-claro boton-bloque">Agendar visita</a>
+            </div>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Antes de venir</h3>
+            <ul>
+              <li>Consulte el stock por teléfono para compras grandes.</li>
+              <li>Traiga el metrado si desea una cotización en el momento.</li>
+              <li>La sala de exhibición atiende con asesor asignado.</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

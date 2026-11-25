@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Formulario de consulta comercial, teléfonos, correo y ubicación de Acero y Altura en Arequipa.">
+  <meta name="keywords" content="contacto, cotizacion, telefono, correo, ubicacion, Arequipa, acabados, ascensores">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Contacto</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html" class="activo">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- Cabecera de la página con ruta de navegación -->
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="ruta-navegacion"><a href="index.html">Inicio</a> &rsaquo; Contacto</p>
+        <h1>Contacto</h1>
+        <p>Póngase en contacto con nuestro equipo comercial y técnico. Respondemos las cotizaciones en menos de 48 horas.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor rejilla-formulario">
+
+        <!-- FORMULARIO DE CONSULTA COMERCIAL -->
+        <form class="formulario" action="#" method="post" name="formularioContacto">
+
+          <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <div class="campo">
+              <label for="nombre">Nombre completo <span class="obligatorio">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. María Torres"
+                     maxlength="80" required>
+            </div>
+
+            <div class="campo campo-doble">
+              <div>
+                <label for="correo">Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                <small class="ayuda-campo">El navegador valida el formato del correo.</small>
+              </div>
+              <div>
+                <label for="telefono">Teléfono / WhatsApp <span class="obligatorio">*</span></label>
+                <input type="tel" id="telefono" name="telefono" placeholder="9XXXXXXXX"
+                       pattern="[0-9]{6,12}" required>
+                <small class="ayuda-campo">Solo números, entre 6 y 12 dígitos.</small>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="empresa">Empresa o constructora</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Opcional">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalle de la consulta</legend>
+
+            <div class="campo campo-doble">
+              <div>
+                <label for="motivo">Motivo de la consulta <span class="obligatorio">*</span></label>
+                <select id="motivo" name="motivo" required>
+                  <option value="">-- Seleccione una opción --</option>
+                  <option value="acabados">Acabados de construcción</option>
+                  <option value="adhesivos">Adhesivos y morteros</option>
+                  <option value="selladores">Selladores y cintas</option>
+                  <option value="instalacion">Instalación de ascensor</option>
+                  <option value="mantenimiento">Mantenimiento de ascensor</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div>
+                <label for="fecha">Fecha estimada de inicio</label>
+                <input type="date" id="fecha" name="fecha">
+              </div>
+            </div>
+
+            <div class="grupo-opciones">
+              <span>Medio de respuesta preferido</span>
+              <div class="opcion">
+                <input type="radio" id="via-correo" name="via" value="correo" checked>
+                <label for="via-correo">Correo electrónico</label>
+              </div>
+              <div class="opcion">
+                <input type="radio" id="via-telefono" name="via" value="telefono">
+                <label for="via-telefono">Llamada telefónica</label>
+              </div>
+              <div class="opcion">
+                <input type="radio" id="via-whatsapp" name="via" value="whatsapp">
+                <label for="via-whatsapp">WhatsApp</label>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Cuéntenos sobre el proyecto <span class="obligatorio">*</span></label>
+              <textarea id="mensaje" name="mensaje" rows="6"
+                        placeholder="Ubicación, metrado, número de pisos, fecha estimada, etc."
+                        required></textarea>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="politica" name="politica" required>
+              <label for="politica">Acepto la política de tratamiento de datos personales
+                 y autorizo el contacto comercial. <span class="obligatorio">*</span></label>
+            </div>
+
+            <div class="campo-check">
+              <input type="checkbox" id="boletin" name="boletin">
+              <label for="boletin">Deseo recibir novedades técnicas y promociones mensuales.</label>
+            </div>
+          </fieldset>
+
+          <div class="acciones-formulario">
+            <button type="submit" class="boton boton-acento">Enviar consulta</button>
+            <button type="reset" class="boton">Limpiar formulario</button>
+          </div>
+
+          <p class="aviso-legal">Los campos marcados con <span class="obligatorio">*</span> son
+             obligatorios. En esta entrega el formulario no cuenta con procesamiento del lado del
+             servidor: la validación se resuelve con los tipos de campo y atributos de HTML5.</p>
+        </form>
+
+        <!-- PANEL LATERAL CON MEDIOS DE CONTACTO -->
+        <aside class="barra-lateral">
+          <div class="panel-lateral">
+            <h3>Otros medios de contacto</h3>
+            <ul>
+              <li><span class="dato-tecnico">Teléfono</span><br>(054) 123-456</li>
+              <li><span class="dato-tecnico">WhatsApp</span><br>967-654-321</li>
+              <li><span class="dato-tecnico">Correo</span><br>ventas@aceroyaltura.pe</li>
+              <li><span class="dato-tecnico">Dirección</span><br>Av. Principal 540, Cercado &mdash; Arequipa</li>
+              <li><span class="punto-estado"></span> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</li>
+            </ul>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>Antes de escribirnos</h3>
+            <ul>
+              <li><a href="preguntas.html">Revise las preguntas frecuentes</a></li>
+              <li><a href="productos.html">Consulte precios referenciales</a></li>
+              <li><a href="servicios.html">Compare los planes de mantenimiento</a></li>
+            </ul>
+          </div>
+
+          <div class="caja-lateral">
+            <h3>¿Un reclamo?</h3>
+            <p>Atendemos los reclamos por el canal formal del libro de reclamaciones.</p>
+            <a class="boton boton-bloque" href="reclamos.html">Ir al libro</a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- UBICACIÓN EMBEBIDA -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestra ubicación</h2>
+        <div class="marco-iframe">
+          <iframe src="mapa-sede.html" title="Plano de ubicación del taller y sala de exhibición"
+                  loading="lazy"></iframe>
+        </div>
+        <p class="pie-recurso">Plano propio (imagen) cargado mediante &lt;iframe&gt; desde
+           mapa-sede.html, sin servicios externos.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

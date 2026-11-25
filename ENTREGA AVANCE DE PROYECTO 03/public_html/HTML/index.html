@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Acero y Altura: acabados de construcción, adhesivos, selladores, cintas industriales y sistemas de ascensores y elevadores en Arequipa, Perú.">
+  <meta name="keywords" content="acabados de construccion, adhesivos, selladores, cintas industriales, ascensores, elevadores, mantenimiento preventivo, Arequipa">
+  <meta name="author" content="Grupo 04 - Taller de Programación Web - UTP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#c9502b">
+  <title>Acero &amp; Altura | Acabados, adhesivos y ascensores en Arequipa</title>
+
+  <!-- Icono (imagen PNG) propio y hojas de estilo externas -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <!-- Hoja de estilos única (dividida en bloques) -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="salto-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Barra de avisos con texto deslizante -->
+  <div class="barra-aviso">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <strong>Aviso:</strong> nuevo stock de adhesivos y selladores de alto rendimiento &mdash;
+      Mantenimiento preventivo de ascensores con 15 % de descuento este mes &mdash;
+      Atención de cotizaciones de lunes a sábado, de 8:00 a. m. a 6:00 p. m.
+    </marquee>
+  </div>
+
+  <!-- Encabezado: logotipo, control del menú móvil y menú de navegación -->
+  <header class="encabezado">
+    <div class="contenedor">
+
+      <a href="index.html" class="logo">
+        <img class="logo-imagen" src="imagenes/logo.png" alt="Logotipo de Acero &amp; Altura">
+        <span class="logo-texto">Acero &amp; Altura
+          <span>Acabados &middot; Adhesivos &middot; Elevadores</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="control-menu" class="control-menu">
+      <label for="control-menu" class="boton-menu" title="Abrir o cerrar el menú de navegación">
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li class="tiene-submenu">
+            <a href="Registro.html">Más</a>
+            <ul class="submenu">
+              <li><a href="Registro.html">Registro de clientes</a></li>
+              <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+              <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                          <li><a href="cotizacion.html">Cotización y boleta</a></li>
+              <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- PORTADA (HERO): propuesta de valor + ilustración propia -->
+    <section class="portada">
+      <div class="contenedor portada-grid">
+
+        <div class="portada-texto">
+          <span class="antetitulo">Acabados &middot; Adhesivos &middot; Elevadores</span>
+          <h1>Construimos acabados que resisten y elevadores en los que <em>se puede confiar</em>.</h1>
+          <p>Un solo proveedor para toda la obra: desde el mortero de la primera pieza de
+             porcelanato hasta el mantenimiento preventivo del ascensor de la azotea.
+             Quince años trabajando con constructoras, administradores de edificios y
+             propietarios de la región sur del Perú.</p>
+          <div class="grupo-botones">
+            <a href="cotizacion.html" class="boton boton-acento">Cotizar en línea</a>
+            <a href="productos.html" class="boton boton-claro">Ver catálogo</a>
+          </div>
+        </div>
+
+        <figure class="portada-figura">
+          <!-- Ilustración en PNG; la cabina es una segunda imagen que se anima desde el BLOQUE 08 (animaciones) de estilos.css -->
+          <div class="portada-imagen">
+            <img class="portada-fondo" src="imagenes/portada-edificio.png"
+                 alt="Ilustración de un edificio en construcción con grúa torre y cabina de ascensor">
+            <img class="cabina-ascensor" src="imagenes/portada-cabina.png" alt="">
+          </div>
+          <figcaption class="sello-portada"><b>15</b> años de obra</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- BANNER DE CIFRAS: trama diagonal en desplazamiento continuo -->
+    <section class="franja-cifras">
+      <div class="contenedor">
+        <div class="cifra"><b>15</b><span>Años de experiencia</span></div>
+        <div class="cifra"><b>420+</b><span>Obras atendidas</span></div>
+        <div class="cifra"><b>96 %</b><span>Clientes que repiten</span></div>
+        <div class="cifra"><b>48 h</b><span>Respuesta de cotización</span></div>
+      </div>
+    </section>
+
+    <!-- CUATRO LÍNEAS DE TRABAJO: tarjetas con icono en imagen -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Cuatro líneas de trabajo, un mismo estándar</h2>
+        <p class="texto-guia">Cada línea cuenta con responsable técnico propio, ficha de producto
+           y garantía escrita. Pase el puntero sobre una tarjeta para ver el detalle.</p>
+
+        <div class="tarjetas-linea">
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-acabados.png" alt="">
+            <h3>Acabados de construcción</h3>
+            <p>Pisos, revestimientos, tarrajeos y pintura para obra nueva o remodelación,
+               con cuadrillas propias y control de avance semanal.</p>
+            <a class="enlace-tarjeta" href="productos.html">Ver catálogo</a>
+          </article>
+
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-adhesivos.png" alt="">
+            <h3>Adhesivos y morteros</h3>
+            <p>Pegamentos de alta adherencia para cerámico, porcelanato y piedra natural,
+               en interiores, exteriores y zonas húmedas.</p>
+            <a class="enlace-tarjeta" href="productos.html">Ver presentaciones</a>
+          </article>
+
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-selladores.png" alt="">
+            <h3>Selladores y cintas</h3>
+            <p>Sellado de juntas, impermeabilización de encuentros y cintas industriales
+               de uso pesado para instalaciones y embalaje técnico.</p>
+            <a class="enlace-tarjeta" href="productos.html">Ver fichas</a>
+          </article>
+
+          <article class="tarjeta">
+            <img class="icono-tarjeta" src="imagenes/icono-ascensor.png" alt="">
+            <h3>Ascensores y elevadores</h3>
+            <p>Instalación, modernización y mantenimiento preventivo y correctivo
+               conforme a la Norma Técnica EM.070.</p>
+            <a class="enlace-tarjeta" href="servicios.html">Ver servicios</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO DESTACADO: imagen responsiva + indicadores animados -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="bloque-destacado">
+          <div class="bloque-destacado-texto">
+            <span class="antetitulo">Contenido destacado</span>
+            <h2>Un solo responsable para toda la obra</h2>
+            <p class="texto-guia">Coordinar acabados con una empresa y elevación con otra suele
+               terminar en plazos cruzados. Nuestro equipo entrega ambos frentes con un mismo
+               cronograma, un mismo contacto y una sola garantía escrita.</p>
+
+            <div class="indicadores">
+              <div class="indicador">
+                <span>Entregas dentro del plazo pactado <b>95 %</b></span>
+                <div class="barra-avance"><i class="avance-95"></i></div>
+              </div>
+              <div class="indicador">
+                <span>Mantenimientos atendidos en 24 horas <b>88 %</b></span>
+                <div class="barra-avance"><i class="avance-88"></i></div>
+              </div>
+              <div class="indicador">
+                <span>Obras con ampliación de contrato <b>74 %</b></span>
+                <div class="barra-avance"><i class="avance-74"></i></div>
+              </div>
+            </div>
+
+            <div class="grupo-botones">
+              <a href="nosotros.html" class="boton">Conocer la empresa</a>
+            </div>
+          </div>
+
+          <figure>
+            <picture>
+              <source media="(max-width: 520px)" srcset="imagenes/edificio-320.jpg">
+              <source media="(min-width: 521px)" srcset="imagenes/edificio-700.jpg">
+              <img src="imagenes/edificio-700.jpg"
+                   srcset="imagenes/edificio-320.jpg 320w, imagenes/edificio-700.jpg 700w"
+                   sizes="(max-width: 760px) 100vw, 50vw"
+                   alt="Vista en contrapicado de un edificio multifamiliar de varios pisos"
+                   width="700" height="467">
+            </picture>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE IMÁGENES RESPONSIVAS -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Galería de trabajos</h2>
+        <p class="texto-guia">Las imágenes se sirven en dos tamaños distintos: el navegador
+           descarga la versión que corresponde al ancho real de la pantalla.</p>
+
+        <div class="galeria">
+          <figure>
+            <img src="imagenes/vivienda-420.jpg"
+                 srcset="imagenes/vivienda-320.jpg 320w, imagenes/vivienda-420.jpg 420w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Vivienda terminada con acabados exteriores y zona de piscina"
+                 width="420" height="280" loading="lazy">
+            <figcaption>Acabados en vivienda</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/planos-420.jpg"
+                 srcset="imagenes/planos-320.jpg 320w, imagenes/planos-420.jpg 420w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Especialista revisando los planos del proyecto sobre la mesa de trabajo"
+                 width="420" height="236" loading="lazy">
+            <figcaption>Metrados y planificación</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/soldadura-380.jpg"
+                 srcset="imagenes/soldadura-320.jpg 320w, imagenes/soldadura-380.jpg 380w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Trabajo de soldadura en estructura metálica dentro del taller"
+                 width="380" height="253" loading="lazy">
+            <figcaption>Taller de estructuras</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/taller-380.jpg"
+                 srcset="imagenes/taller-320.jpg 320w, imagenes/taller-380.jpg 380w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Personal técnico recibiendo capacitación sobre un equipo de elevación"
+                 width="380" height="253" loading="lazy">
+            <figcaption>Capacitación técnica</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/oficina-380.jpg"
+                 srcset="imagenes/oficina-320.jpg 320w, imagenes/oficina-380.jpg 380w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Oficina técnica con monitor de seguimiento de obras"
+                 width="380" height="570" loading="lazy">
+            <figcaption>Seguimiento de obra</figcaption>
+          </figure>
+
+          <figure>
+            <img src="imagenes/edificio-700.jpg"
+                 srcset="imagenes/edificio-320.jpg 320w, imagenes/edificio-700.jpg 700w"
+                 sizes="(max-width: 520px) 46vw, (max-width: 760px) 92vw, 30vw"
+                 alt="Fachada de edificio con instalación de ascensor concluida"
+                 width="700" height="467" loading="lazy">
+            <figcaption>Elevación en altura</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA: video y audio con controles nativos de HTML5 -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Video institucional y nota de audio</h2>
+
+        <div class="rejilla-media">
+          <article class="bloque-media">
+            <h3>Video institucional</h3>
+            <p>Un recorrido breve por nuestros procesos de trabajo.</p>
+            <video controls preload="metadata" poster="imagenes/edificio-700.jpg">
+              <source src="videos/VideoBienvenida.mp4" type="video/mp4">
+              Su navegador no admite la reproducción de video. Puede
+              <a href="videos/VideoBienvenida.mp4">descargar el archivo</a>.
+            </video>
+            <p class="pie-recurso">Archivo local: videos/VideoBienvenida.mp4 (MP4 / H.264).</p>
+          </article>
+
+          <article class="bloque-media">
+            <h3>Nota de audio</h3>
+            <p>Mensaje de bienvenida de nuestro gerente técnico.</p>
+            <audio controls preload="metadata">
+              <source src="videos/MensajeBienvenida.mp3" type="audio/mpeg">
+              Su navegador no admite la reproducción de audio. Puede
+              <a href="videos/MensajeBienvenida.mp3">descargar el archivo</a>.
+            </audio>
+            <p class="pie-recurso">Archivo local: videos/MensajeBienvenida.mp3 (MP3).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA INTERACTIVO (Google Maps, igual que en el Avance 1) -->
+    <section class="seccion fondo-alterno">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">¿Cómo llegar?</h2>
+        <p class="texto-guia">Visítanos en nuestro taller y sala de exhibición de acabados y adhesivos.</p>
+
+        <div class="marco-iframe">
+          <iframe
+            src="https://www.google.com/maps?q=Arequipa%2C%20Peru&amp;output=embed"
+            width="100%"
+            height="360"
+            allowfullscreen=""
+            loading="lazy"
+            title="Ubicación de Acero y Altura"></iframe>
+        </div>
+        <p class="pie-recurso">Marco en línea &lt;iframe&gt; &rarr; Google Maps &mdash;
+           ver la <a href="ubicacion.html">página completa de ubicación y horarios</a>.</p>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="contenedor">
+        <span class="antetitulo">Garantía escrita en cada servicio</span>
+        <h2>Cotizamos su proyecto en menos de 48 horas</h2>
+        <p>Envíenos el metrado o las características del edificio y recibirá una propuesta
+           técnica con precios, plazos y alcance detallado.</p>
+        <div class="grupo-botones texto-centrado">
+          <a href="Contacto.html" class="boton boton-claro">Escribir al área comercial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO A LA ACCIÓN FINAL -->
+    <section class="franja-cta">
+      <div class="contenedor">
+        <div class="caja-cta">
+          <div>
+            <h2>¿Compra recurrente de materiales?</h2>
+            <p>Regístrese como cliente y acceda a precios preferenciales por volumen.</p>
+          </div>
+          <a href="Registro.html" class="boton boton-acento">Registrarme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+
+      <div>
+        <h4>Acero &amp; Altura</h4>
+        <p>Acabados de construcción, adhesivos, selladores, cintas industriales y sistemas
+           de ascensores y elevadores para proyectos residenciales, comerciales e industriales
+           en la región sur del Perú.</p>
+        <ul class="redes-sociales">
+          <li><a class="boton-red" href="https://www.facebook.com" target="_blank" rel="noopener"
+                 title="Facebook de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-facebook-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-facebook-blanco.png" alt=""></span><span class="salto-contenido">Facebook</span></a></li>
+          <li><a class="boton-red" href="https://www.instagram.com" target="_blank" rel="noopener"
+                 title="Instagram de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-instagram-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-instagram-blanco.png" alt=""></span><span class="salto-contenido">Instagram</span></a></li>
+          <li><a class="boton-red" href="https://www.linkedin.com" target="_blank" rel="noopener"
+                 title="LinkedIn de Acero y Altura (enlace externo)"><span class="icono-red"><img class="icono-claro" src="imagenes/red-linkedin-claro.png" alt=""><img class="icono-blanco" src="imagenes/red-linkedin-blanco.png" alt=""></span><span class="salto-contenido">LinkedIn</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog.html">Blog de novedades</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="Contacto.html">Contacto y cotizaciones</a></li>
+          <li><a href="Registro.html">Registro de clientes</a></li>
+          <li><a href="reclamos.html">Libro de reclamaciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+                  <li><a href="cotizacion.html">Cotización y boleta</a></li>
+          <li><a href="terminos.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="contacto-pie">
+        <h4>Información de contacto</h4>
+        <p><b>Dirección</b> Av. Principal 540, Cercado &mdash; Arequipa, Perú</p>
+        <p><b>Teléfono</b> (054) 123-456</p>
+        <p><b>Correo</b> ventas@aceroyaltura.pe</p>
+        <p><b>Horario</b> Lunes a sábado, 8:00 a. m. &ndash; 6:00 p. m.</p>
+        <p><span class="punto-estado"></span> Atención de consultas en línea</p>
+      </div>
+
+    </div>
+
+    <div class="franja-legal">
+      &copy; 2026 Acero &amp; Altura &mdash; Taller de Programación Web &mdash; Grupo 04 &mdash; Avance 03.
+      Normativa aplicable:
+      Norma Técnica EM.070 y
+      Ley N.&deg; 29571.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
